@@ -80,8 +80,9 @@ export default class StockGraph extends Component {
       chart.data.datasets = [];
       return chart.update();
     }
+    let chart_dataset;
     Object.keys(this.props.stocks).map((stock_name, index) => {
-      let chart_dataset = chart.data.datasets.find((dataset) => {
+      chart_dataset = chart.data.datasets.find((dataset) => {
         return dataset.label === stock_name.toUpperCase();
       });
 
