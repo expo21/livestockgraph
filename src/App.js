@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div>
+      <h3>Live Stock chart demo</h3>
       <LiveChart />
     </div>
   );

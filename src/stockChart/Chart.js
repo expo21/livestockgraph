@@ -5,7 +5,7 @@ class LiveChart extends Component {
   state = {
     // stocks = {name: {current_value: 12, history: [{time: '2131', value: 45}, ...], is_selected: false}, ...}
     stocks: {},
-    market_trend: undefined, // 'up' or 'down'
+    // market_trend: undefined, // 'up' or 'down'
     connectionError: false,
   };
 
@@ -51,6 +51,7 @@ class LiveChart extends Component {
     return (
       <div className="container graph-container">
         <div className="columns">
+          <h3>hello</h3>
           <StocksGraph stocks={this.state.stocks} />
         </div>
       </div>
